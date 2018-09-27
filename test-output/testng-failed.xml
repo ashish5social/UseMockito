@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MockitoTestSuite]">
+  <test thread-count="5" name="TestMockito(failed)">
+    <classes>
+      <class name="UseMockito.UseMockito.TestNumberSummer">
+        <methods>
+          <include name="testSum" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- UseMockito.UseMockito.TestNumberSummer -->
+    </classes>
+  </test> <!-- TestMockito(failed) -->
+</suite> <!-- Failed suite [MockitoTestSuite] -->

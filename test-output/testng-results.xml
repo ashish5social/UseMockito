@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MockitoTestSuite" duration-ms="1143" started-at="2018-09-27T06:58:06Z" finished-at="2018-09-27T06:58:07Z">
+    <groups>
+    </groups>
+    <test name="TestMockito" duration-ms="1143" started-at="2018-09-27T06:58:06Z" finished-at="2018-09-27T06:58:07Z">
+      <class name="UseMockito.UseMockito.TestCalculator">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:null(UseMockito.UseMockito.TestCalculator)]" name="setUp" is-config="true" duration-ms="875" started-at="2018-09-27T06:58:06Z" finished-at="2018-09-27T06:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPerform()[pri:0, instance:null(UseMockito.UseMockito.TestCalculator)]" name="testPerform" duration-ms="93" started-at="2018-09-27T06:58:07Z" finished-at="2018-09-27T06:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPerform -->
+        <test-method status="PASS" signature="testPerformMul()[pri:0, instance:null(UseMockito.UseMockito.TestCalculator)]" name="testPerformMul" duration-ms="11" started-at="2018-09-27T06:58:07Z" finished-at="2018-09-27T06:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPerformMul -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(UseMockito.UseMockito.TestCalculator)]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-09-27T06:58:07Z" finished-at="2018-09-27T06:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UseMockito.UseMockito.TestCalculator -->
+      <class name="UseMockito.UseMockito.TestNumberSummer">
+        <test-method status="PASS" signature="testSum(int, int, int)[pri:0, instance:UseMockito.UseMockito.TestNumberSummer@7aac8884]" name="testSum" duration-ms="12" started-at="2018-09-27T06:58:07Z" data-provider="NumSumDataProvider" finished-at="2018-09-27T06:58:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method status="FAIL" signature="testSum(int, int, int)[pri:0, instance:UseMockito.UseMockito.TestNumberSummer@7aac8884]" name="testSum" duration-ms="21" started-at="2018-09-27T06:58:07Z" data-provider="NumSumDataProvider" finished-at="2018-09-27T06:58:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Sum and expected sum are not matching expected [-3] but found [-2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Sum and expected sum are not matching expected [-3] but found [-2]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at UseMockito.UseMockito.TestNumberSummer.testSum(TestNumberSummer.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+      </class> <!-- UseMockito.UseMockito.TestNumberSummer -->
+    </test> <!-- TestMockito -->
+  </suite> <!-- MockitoTestSuite -->
+</testng-results>
