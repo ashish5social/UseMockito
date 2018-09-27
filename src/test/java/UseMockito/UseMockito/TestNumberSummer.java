@@ -11,7 +11,7 @@ public class TestNumberSummer {
 	public Object[][] numberSumDP() {
 		return new Object[][] {
 			{-1, 1, 0},
-			{-2, 1, -3}
+			{-2, 1, -2}
 		}; 
 	}
 	
